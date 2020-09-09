@@ -1,0 +1,17 @@
+package com.example.calculator.addition;
+
+import junit.framework.Assert;
+
+import org.junit.Test;
+public class AdditionTest {
+	
+	Addition ad = new Addition();
+	
+	@Test
+	public void testAdd(){
+		Assert.assertEquals(9, ad.add(4,5));
+	}
+	
+	
+	
+}
