@@ -14,7 +14,7 @@ class AdditionApplicationTests {
 	Addition ad = new Addition();
 	@Test
 	public void testAdd(){
-		Assert.assertEquals(9, ad.add(4,4));
+		Assert.assertEquals(9, ad.add(4,5));
 	}
 
 }
