@@ -8,7 +8,7 @@ node(){
             mvn clean install
         '''
     }
-    stgae('Publish JUnit test cases'){
+    stage('Publish JUnit test cases'){
         step([$class: 'JUnitResultArchiver', testResults: 'target/surefire-reports/TEST-com.example.calculator.addition.AdditionApplicationTests.xml'])
     }
 }
